@@ -1,53 +1,18 @@
 import turtle as t
 
 screen = t.Screen()
-screen.setup(700,700)
+screen.setup(700,500)
 bet = screen.textinput('Want to give a try ?', 'Make a bet, choose a color: ')
+colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple']
+y_position = [-125, -75, -25, 25, 75, 125]
 
-def red_turtle():
+for turtle_i in range(0, 6):
     tim = t.Turtle('turtle')
-    tim.color('red')
+    tim.color(colors[turtle_i])
     tim.penup()
-    tim.goto(-300, -100)
-
-def orange_turtle():
-    tim = t.Turtle('turtle')
-    tim.color('orange')
-    tim.penup()
-    tim.goto(-300, -50)
-
-def yellow_turtle():
-    tim = t.Turtle('turtle')
-    tim.color('yellow')
-    tim.penup()
-    tim.goto(-300, 0)
-
-def green_turtle():
-    tim = t.Turtle('turtle')
-    tim.color('green')
-    tim.penup()
-    tim.goto(-300, 50)
-
-def blue_turtle():
-    tim = t.Turtle('turtle')
-    tim.color('blue')
-    tim.penup()
-    tim.goto(-300, 100)
-
-def purple_turtle():
-    tim = t.Turtle('turtle')
-    tim.color('purple')
-    tim.penup()
-    tim.goto(-300, 150)
+    tim.goto(-300, y_position[turtle_i])
 
 
-
-red_turtle()
-orange_turtle()
-yellow_turtle()
-green_turtle()
-blue_turtle()
-purple_turtle()
 
 
 
